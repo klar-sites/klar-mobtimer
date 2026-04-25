@@ -309,7 +309,7 @@ function attemptDownload() {
     document.getElementById("dl-password").value = "";
     document.getElementById("dl-error").classList.remove("visible");
     const a = document.createElement("a");
-    a.href = "/Mob Timer.dmg";
+    a.href = "assets/Mob Timer.dmg";
     a.download = "Mob Timer.dmg";
     document.body.appendChild(a);
     a.click();
