@@ -15,7 +15,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet">
     <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      try {
+  window.va = window.va || function() {
+        (window.vaq = window.vaq || []).push(arguments);
+      };
+} catch (error) {
+  console.error(error);
+  // Expected output: ReferenceError: nonExistentFunction is not defined
+  // (Note: the exact output may be browser-dependent)
+}
+      
     </script>
     <script defer src="/_vercel/insights/script.js"></script>
   </head>
